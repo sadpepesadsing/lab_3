@@ -14,7 +14,6 @@ def is_luhn_valid(card_number_string):
             sum_of_digits += digit
         else:
             sum_of_digits += digits[i]
-    print(sum_of_digits % 10)
     return sum_of_digits % 10 == 0
 
 def is_valid_card(card: str):
