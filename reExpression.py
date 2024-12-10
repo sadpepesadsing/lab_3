@@ -28,4 +28,4 @@ def find_card_in_text(text: str):
     for card in cards:
         if not is_luhn_valid(card):
             cards.remove(card)
-    return f"Cards: {cards}"
+    return cards

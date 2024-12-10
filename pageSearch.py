@@ -10,6 +10,7 @@ def find_cards_on_webpage(url):
         response.raise_for_status()
 
         cards = find_card_in_text(response.text)
+        print(response.text)
         if cards:
             print("Found cards on the page:", cards)
         else:
